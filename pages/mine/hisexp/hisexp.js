@@ -1,4 +1,4 @@
-// pages/mine/mine.js
+// pages/mine/hisexp/hisexp.js
 Page({
 
   /**
@@ -7,21 +7,7 @@ Page({
   data: {
 
   },
-  moveBill() {
-    wx.navigateTo({
-      url: 'hisenv/hisenv',
-    })
-  },
-  moveRecord() {
-    wx.navigateTo({
-      url: 'hisexp/hisexp',
-    })
-  },
-  moveWallet() {
-    wx.navigateTo({
-      url: 'about/about',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

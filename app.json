@@ -6,6 +6,8 @@
     "pages/index/index",
     "pages/basics/home/home",
     "pages/mine/hisenv/hisenv", 
+    "pages/mine/hisexp/hisexp",
+    "pages/mine/about/about",
     "pages/basics/layout/layout",
     "pages/basics/button/button",
     "pages/basics/button/design",
