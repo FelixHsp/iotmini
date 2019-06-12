@@ -1,0 +1,78 @@
+{
+  "pages": [
+    "pages/mine/mine",
+    "pages/collection/collection",
+    "pages/remove/remove",
+    "pages/index/index",
+    "pages/basics/home/home",
+    "pages/mine/hisenv/hisenv", 
+    "pages/basics/layout/layout",
+    "pages/basics/button/button",
+    "pages/basics/button/design",
+    "pages/basics/tag/tag",
+    "pages/basics/avatar/avatar",
+    "pages/basics/progress/progress",
+    "pages/basics/shadow/shadow",
+    "pages/basics/background/background",
+    "pages/basics/text/text",
+    "pages/basics/icon/icon",
+    "pages/basics/loading/loading",
+    "pages/component/home/home",
+    "pages/component/list/list",
+    "pages/component/bar/bar",
+    "pages/component/timeline/timeline",
+    "pages/component/chat/chat",
+    "pages/component/form/form",
+    "pages/component/nav/nav",
+    "pages/component/card/card",
+    "pages/component/swiper/swiper",
+    "pages/component/modal/modal",
+    "pages/component/steps/steps",
+    "pages/plugin/home/home",
+    "pages/plugin/indexes/indexes",
+    "pages/plugin/gradual/gradual",
+    "pages/plugin/animation/animation",
+    "pages/about/about/about",
+    "pages/about/log/log",
+    "pages/about/test/list",
+    "pages/about/test/filter",
+    "pages/about/home/home",
+    "pages/plugin/drawer/drawer",
+    "pages/plugin/verticalnav/verticalnav"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarTitleText": "Color UI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#39b54a",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/collection/collection",
+        "text": "园区环境",
+        "iconPath": "images/tabbar/component.png",
+        "selectedIconPath": "images/tabbar/component_cur.png"
+      },
+      {
+        "pagePath": "pages/remove/remove",
+        "text": "遥控小车",
+        "iconPath": "images/tabbar/plugin.png",
+        "selectedIconPath": "images/tabbar/plugin_cur.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/tabbar/about.png",
+        "selectedIconPath": "images/tabbar/about_cur.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap53.json"
+}

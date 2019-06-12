@@ -1,0 +1,33 @@
+<!--pages/mine/mine.wxml-->
+<view>
+  <view class='top-img'>
+    <view class='top-content'>
+      <view class='user-avatar'>
+        <open-data type="userAvatarUrl" class="top-img"></open-data>
+      </view>
+      <view class='user-name'>
+        <open-data type="userNickName" class="top-user"></open-data>
+      </view>
+    </view>
+  </view>
+  <view class='list'>
+    <view class='pay' bindtap='moveBill'>
+    <text class="cuIcon-list text-green"></text>
+    <!-- <image src='' class='img-bill'></image> -->
+    历史环境数据
+    </view>
+    <view class='record' bindtap='moveRecord'>
+    <text class="cuIcon-explore text-red"></text>
+    <!-- <image src='' class='img-record'></image> -->
+    历史巡视记录
+    </view>
+    <view class='wallet' bindtap='moveWallet'>
+   <text class="cuIcon-appreciate text-pink"></text>
+    关于我们
+    </view>
+    <view class='about'>
+   <text class="cuIcon-calendar text-gray"></text>
+    <button class='button' open-type="feedback">意见反馈</button>
+    </view>
+  </view>
+</view>
