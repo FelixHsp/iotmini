@@ -1,1 +1,18 @@
 <cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">历史环境数据</view></cu-custom>
+<scroll-view scroll-x class="bg-gradual-green nav text-center">
+  <view class="cu-item {{0==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-id="0">
+    <text class="cuIcon-camerafill"></text> 光照强度
+  </view>
+  <view class="cu-item {{1==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-id="1">
+    <text class="cuIcon-upstagefill"></text> 温度
+  </view>
+  <view class="cu-item {{2==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-id="2">
+    <text class="cuIcon-clothesfill"></text> PM2.5
+  </view>
+  <view class="cu-item {{3==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-id="3">
+    <text class="cuIcon-clothesfill"></text> 紫外线强度
+  </view>
+</scroll-view>
+<view wx:for="{{10}}" wx:key wx:if="{{index==TabCur}}" class="bg-grey padding margin text-center">
+  Tab{{index}}
+</view>

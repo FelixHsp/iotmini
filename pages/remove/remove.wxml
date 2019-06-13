@@ -1,2 +1,7 @@
-<!--pages/remove/remove.wxml-->
-<text>pages/remove/remove.wxml</text>
+<cu-custom bgColor="bg-gradual-green"><view slot="content">遥控小车</view></cu-custom>
+<view>
+ <button class="cu-btn round bg-olive " id='qianjin' bindtap='go'>前进</button>
+ <button class="cu-btn round bg-olive " id='zuozhan' bindtap='left'>左转</button>
+ <button class="cu-btn round bg-olive " id='houtui' bindtap='back'>后退</button>
+ <button class="cu-btn round bg-olive " id='youzhuan' bindtap='right'>右转</button>
+</view>
