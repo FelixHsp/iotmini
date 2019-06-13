@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    dis1:'',
+    dis2:'',
+    dis3:'',
+    dis4:''
   },
 
   /**
@@ -62,5 +65,46 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  go:function(){
+    console.log('前进')
+    this.setData({
+      dis2:true,
+      dis3: true,
+      dis4: true
+    })
+  },
+  back: function () {
+    console.log('后退')
+    this.setData({
+      dis2: true,
+      dis1: true,
+      dis4: true
+    })
+  },
+  left: function () {
+    console.log('左转')
+    this.setData({
+      dis1: true,
+      dis3: true,
+      dis4: true
+    })
+  },
+  right: function () {
+    console.log('右转')
+    this.setData({
+      dis2: true,
+      dis3: true,
+      dis1: true
+    })
+  },
+  stop: function(){
+    console.log('停止')
+    this.setData({
+      dis1: '',
+      dis2: '',
+      dis3: '',
+      dis4: ''
+    })
   }
 })

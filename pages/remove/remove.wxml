@@ -1,7 +1,11 @@
 <cu-custom bgColor="bg-gradual-green"><view slot="content">遥控小车</view></cu-custom>
-<view>
- <button class="cu-btn round bg-olive " id='qianjin' bindtap='go'>前进</button>
- <button class="cu-btn round bg-olive " id='zuozhan' bindtap='left'>左转</button>
- <button class="cu-btn round bg-olive " id='houtui' bindtap='back'>后退</button>
- <button class="cu-btn round bg-olive " id='youzhuan' bindtap='right'>右转</button>
+<view class='open'>
+  <button class="cu-btn round bg-yellow">开灯</button>
+  <button class="cu-btn round bg-red">关灯</button>
+</view>
+<view class='derect'>
+    <button class="cu-btn round bg-olive " id='qianjin' bindtouchstart='go' bindtouchend='stop' disabled='{{dis1}}'>前进</button>
+    <button class="cu-btn round bg-olive " id='zuozhuan' bindtouchstart='left' bindtouchend='stop' disabled='{{dis2}}'>左转      </button>
+    <button class="cu-btn round bg-olive " id='houtui' bindtouchstart='back' bindtouchend='stop' disabled='{{dis3}}'>后退</button>
+    <button class="cu-btn round bg-olive " id='youzhuan' bindtouchstart='right' bindtouchend='stop' disabled='{{dis4}}'>右转   </button>
 </view>

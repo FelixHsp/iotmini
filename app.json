@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/mine/mine",
     "pages/collection/collection",
     "pages/remove/remove",
+    "pages/mine/mine",
     "pages/index/index",
     "pages/basics/home/home",
     "pages/mine/hisenv/hisenv", 

@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    person: [{ name: '胡少鹏', price: '前端工程师', pic: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg', time: '10:20', type: 'text-cut' }, { name: '未知', price: '闯入警告', pic: '', time: '10:10', type: "cuIcon-infofill text-red" }, { name: '孙庆轩', price: 'iot架构工程师', pic: 'https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png', time: '10:00' }],
+    person: [{ name: '孙庆轩', price: 'iot架构工程师', pic: 'https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png', time: '12:10' },{ name: '胡少鹏', price: '前端工程师', pic: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg', time: '12:00', type: 'text-cut' }, { name: '未知', price: '闯入警告', pic: '', time: '11:00', type: "cuIcon-infofill text-red" }, { name: '孙庆轩', price: 'iot架构工程师', pic: 'https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png', time: '10:40' }],
   },
 
   /**
