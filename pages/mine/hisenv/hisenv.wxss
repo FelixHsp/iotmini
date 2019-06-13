@@ -1,1 +1,25 @@
 /* pages/mine/hisenv/hisenv.wxss */
+#tem-list{
+  border-radius: 15px;
+  position: relative;
+}
+#tem-list text{
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  font-size: 30px;
+  left: 30px;
+}
+#tem-list .time{
+  position: relative;
+  left: 60%;
+  margin-top: -3%;
+}
+#tem-list .value{
+  position: relative;
+  /* left: 60%; */
+  margin-top: 5%;
+  left: 40%;
+  font-size: 18px;
+  /* transform: translate(-50%,0); */
+}

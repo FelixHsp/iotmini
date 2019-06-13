@@ -1,1 +1,45 @@
 <cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">历史巡视记录</view></cu-custom>
+<view class="cu-bar bg-white solid-bottom margin-top">
+    <view class="datas-title">
+      今日巡视汇总
+    </view>
+  </view>
+  <view class="cu-list menu-avatar">
+    <view class="cu-item" wx:for="{{person}}" wx:key='{{index}}'>
+      <view class="cu-avatar round lg" style="background-image:url({{item.pic}});"></view>
+      <view class="content">
+        <view class="text-grey">{{item.name}}</view>
+        <view class="text-gray text-sm flex">
+          <text class="text-cut">
+							<text class="{{item.type}}"></text> {{item.price}}
+          </text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="text-grey text-xs">{{item.time}}</view>
+        <!-- <view class="cu-tag round bg-grey sm">5</view> -->
+      </view>
+    </view>
+  </view>
+  <view class="cu-bar bg-white solid-bottom margin-top">
+    <view class="datas-title">
+      昨日巡视汇总
+    </view>
+  </view>
+  <view class="cu-list menu-avatar">
+    <view class="cu-item" wx:for="{{person}}" wx:key='{{index}}'>
+      <view class="cu-avatar round lg" style="background-image:url({{item.pic}});"></view>
+      <view class="content">
+        <view class="text-grey">{{item.name}}</view>
+        <view class="text-gray text-sm flex">
+          <text class="text-cut">
+							<text class="{{item.type}}"></text> {{item.price}}
+          </text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="text-grey text-xs">{{item.time}}</view>
+        <!-- <view class="cu-tag round bg-grey sm">5</view> -->
+      </view>
+    </view>
+  </view>
