@@ -1,3 +1,4 @@
+<view class='wrap'>
 <cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">历史环境数据</view></cu-custom>
 <scroll-view scroll-x class="bg-gradual-green nav text-center">
   <view class="cu-item {{0==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-id="0">
@@ -32,4 +33,5 @@
   <text class="cuIcon-clothesfill text-yellow"></text>
   <view class='time'>{{item.time}}</view>
   <view class='value'>{{item.value}} 级</view>
+</view>
 </view>

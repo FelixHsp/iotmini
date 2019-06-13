@@ -1,4 +1,7 @@
 /* pages/mine/hisenv/hisenv.wxss */
+.wrap{
+  overflow: hidden
+}
 #tem-list{
   border-radius: 15px;
   position: relative;
