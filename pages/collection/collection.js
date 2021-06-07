@@ -5,7 +5,7 @@ Page({
     CustomBar: app.globalData.CustomBar,
     light:"70",
     temp:"29",
-    pm:"48",
+    pm:"无",
     uv:'6',
     person: [{ name: '胡少鹏', price: '前端工程师', pic: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg', time: '10:20', type: 'text-cut' }, { name: '未知', price: '闯入警告', pic: '', time: '10:10', type:"cuIcon-infofill text-red"}, { name: '孙庆轩', price: 'iot架构工程师', pic:'https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png',time: '10:00' }],
     iconList: [{
@@ -22,7 +22,7 @@ Page({
       icon: 'similar',
       color: 'yellow',
       badge: 0,
-      name: 'PM2.5'
+      name: '火焰检测'
     }, {
       icon: 'noticefill',
       color: 'olive',
@@ -88,7 +88,7 @@ Page({
     };
     if (e.currentTarget.dataset.key == 2) {
       wx.showModal({
-        title: '当前PM2.5',
+        title: '有无火焰',
         content: this.data.pm,
       })
     };

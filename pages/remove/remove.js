@@ -66,12 +66,66 @@ Page({
   onShareAppMessage: function () {
 
   },
+  opendeng:function(){
+    wx.showModal({
+      title: '成功',
+      content: '灯已打开',
+    })
+    wx.request({
+      url: 'http://123.207.216.106/iot/test/open.php',
+      method: 'GET',
+      success: function (res) {
+        // success
+        console.log(res)
+      },
+      fail: function () {
+        // fail
+      },
+      complete: function () {
+        // complete
+      }
+    })
+  },
+  closedeng: function () {
+    wx.showModal({
+      title: '成功',
+      content: '灯已关闭',
+    })
+    wx.request({
+      url: 'http://123.207.216.106/iot/test/close.php',
+      method: 'GET',
+      success: function (res) {
+        // success
+        console.log(res)
+      },
+      fail: function () {
+        // fail
+      },
+      complete: function () {
+        // complete
+      }
+    })
+  },
   go:function(){
     console.log('前进')
     this.setData({
       dis2:true,
       dis3: true,
       dis4: true
+    })
+    wx.request({
+      url: 'http://123.207.216.106/iot/test/go.php',
+      method: 'GET',
+      success: function (res) {
+        // success
+        console.log(res)
+      },
+      fail: function () {
+        // fail
+      },
+      complete: function () {
+        // complete
+      }
     })
   },
   back: function () {
@@ -81,6 +135,20 @@ Page({
       dis1: true,
       dis4: true
     })
+    wx.request({
+      url: 'http://123.207.216.106/iot/test/bc.php',
+      method: 'GET',
+      success: function (res) {
+        // success
+        console.log(res)
+      },
+      fail: function () {
+        // fail
+      },
+      complete: function () {
+        // complete
+      }
+    })
   },
   left: function () {
     console.log('左转')
@@ -88,6 +156,20 @@ Page({
       dis1: true,
       dis3: true,
       dis4: true
+    })
+    wx.request({
+      url: 'http://123.207.216.106/iot/test/le.php',
+      method: 'GET',
+      success: function (res) {
+        // success
+        console.log(res)
+      },
+      fail: function () {
+        // fail
+      },
+      complete: function () {
+        // complete
+      }
     })
   },
   right: function () {
@@ -97,6 +179,20 @@ Page({
       dis3: true,
       dis1: true
     })
+    wx.request({
+      url: 'http://123.207.216.106/iot/test/ri.php',
+      method: 'GET',
+      success: function (res) {
+        // success
+        console.log(res)
+      },
+      fail: function () {
+        // fail
+      },
+      complete: function () {
+        // complete
+      }
+    })
   },
   stop: function(){
     console.log('停止')
@@ -105,6 +201,20 @@ Page({
       dis2: '',
       dis3: '',
       dis4: ''
+    })
+    wx.request({
+      url: 'http://123.207.216.106/iot/test/st.php',
+      method: 'GET',
+      success: function (res) {
+        // success
+        console.log(res)
+      },
+      fail: function () {
+        // fail
+      },
+      complete: function () {
+        // complete
+      }
     })
   }
 })

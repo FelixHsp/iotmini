@@ -1,7 +1,7 @@
 <cu-custom bgColor="bg-gradual-green"><view slot="content">遥控小车</view></cu-custom>
 <view class='open'>
-  <button class="cu-btn round bg-yellow">开灯</button>
-  <button class="cu-btn round bg-red">关灯</button>
+  <button class="cu-btn round bg-yellow" bindtap="opendeng">开灯</button>
+  <button class="cu-btn round bg-red" bindtap="closedeng">关灯</button>
 </view>
 <view class='derect'>
     <button class="cu-btn round bg-olive " id='qianjin' bindtouchstart='go' bindtouchend='stop' disabled='{{dis1}}'>前进</button>

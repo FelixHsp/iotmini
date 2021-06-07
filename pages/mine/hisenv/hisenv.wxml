@@ -8,7 +8,7 @@
     <text class="cuIcon-selection"></text> 温度
   </view>
   <view class="cu-item {{2==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-id="2">
-    <text class="cuIcon-bad"></text> PM2.5
+    <text class="cuIcon-bad"></text> 火焰检测
   </view>
   <view class="cu-item {{3==TabCur?'text-white cur':''}}" bindtap="tabSelect" data-id="3">
     <text class="cuIcon-clothesfill"></text> 紫外线强度
@@ -27,7 +27,7 @@
 <view wx:for="{{pm}}" wx:key wx:if="{{2==TabCur}}" class="bg-gradual-green padding margin" id='tem-list'>
   <text class="cuIcon-bad text-yellow"></text>
   <view class='time'>{{item.time}}</view>
-  <view class='value'>{{item.value}} 微克</view>
+  <view class='value'>{{item.value}}</view>
 </view>
 <view wx:for="{{tem}}" wx:key wx:if="{{3==TabCur}}" class="bg-gradual-green padding margin" id='tem-list'>
   <text class="cuIcon-clothesfill text-yellow"></text>
